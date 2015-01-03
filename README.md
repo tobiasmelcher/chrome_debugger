@@ -36,18 +36,18 @@ Chrome needs to be started with following command line parameter so that the deb
 both packages can be installed via M-x package-install 
 
 ## Sample .emacs config to register debugger shortcuts: 
-
+```
    (add-to-list 'load-path "<path to chrome_debugger.el>")
    (defun my_javascript_keys ()
    	  (require 'chrome_debugger)
-	  (local-set-key (kbd "<f5>") 'chrome-step-into)
-	  (local-set-key (kbd "<f6>") 'chrome-step-over)
-	  (local-set-key (kbd "<f7>") 'chrome-step-out)  
-	  (local-set-key (kbd "<f9>") 'chrome-continue)  
-	  (local-set-key (kbd "<f10>") 'chrome-evaluate-expression)
-	  )
+   	  (local-set-key (kbd "<f5>") 'chrome-step-into)
+   	  (local-set-key (kbd "<f6>") 'chrome-step-over)
+   	  (local-set-key (kbd "<f7>") 'chrome-step-out)  
+  	  (local-set-key (kbd "<f9>") 'chrome-continue)
+   	  (local-set-key (kbd "<f10>") 'chrome-evaluate-expression)
+   	  )
     ;;(add-hook 'js-mode-hook 'my_javascript_keys)
     (add-hook 'js2-mode-hook 'my_javascript_keys)
-
+```
 ## Status:
 alpha
