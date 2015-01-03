@@ -267,6 +267,7 @@
     (setq url (concat chrome-local-root (substring url (length chrome-root-url) (length url))))
     ;; open file and mark line
     (find-file url)
+    ;; TODO: if file not found -> then load file content via websocket  
     ;;(goto-line (1+ lineNumber))
     (goto-char (point-min))
     (forward-line lineNumber)
