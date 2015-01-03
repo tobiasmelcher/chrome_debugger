@@ -9,7 +9,9 @@ from the chrome developer tools like stepping, show stack, restart frame,
 object evaluation, file recompilation, debugging of web workers are supported. 
 
 chrome needs to be started with following command line parameter
- 	chrome --remote-debugging-port=9222
+
+ 	`chrome --remote-debugging-port=9222`
+
 so that the debug port is open.
 
 Following interactive emacs commands are
@@ -32,10 +34,13 @@ Following interactive emacs commands are
 - chrome-disable-all-breakpoints - disable all breakpoints
 - chrome-enable-all-breakpoints  - enables all breakpoints
 
-Dependencies:
+Dependencies
+
 - websocket
 - json-reformat
+
 both packages can be installed via M-x package-install 
 
-Status:
+Status
+
 alpha
